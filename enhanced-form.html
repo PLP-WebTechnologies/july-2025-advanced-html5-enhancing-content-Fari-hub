@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced Web Page with Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    fieldset {
+      border: 1px solid #aaa;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to our Educator Page</h1>
+    <p>This page demonstrates lists, tables, media, and a fully accessible HTML5 form.</p>
+  </header>
+
+  <section>
+    <h2>📚Courses Offered</h2>
+    <ul>
+      <li>Learning through Play</li>
+      <li>Art and Crafts</li>
+      <li>Learning through Music</li>
+      <li>Language Activities</li>
+      <li>Mathematical Activities</li>
+    </ul>
+  </section>
+  
+  <section>
+    <h2>🎇Activities Sign up!</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Instructor</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Art and Crafts </td>
+          <td>Brielle Belle</td>
+          <td>4 weeks</td>
+        </tr>
+        <tr>
+          <td>Music</td>
+          <td>Arabelle Mina</td>
+          <td>6 weeks</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🎬 Media Showcase</h2>
+    <figure>
+  <img src="https://images.pexels.com/photos/7031286/pexels-photo-7031286.jpeg" width="600" height="300" />
+  <figcaption>A glimpse into children making music.</figcaption>
+</figure>
+
+<video controls width="600">
+  <source src="https://player.vimeo.com/external/8363271.sd.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+</section>
+
+ <section>
+    <h2>📝 Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Brielle Belle" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="briellebelle4@" />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="5" placeholder="Fari123" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters" />
+
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" name="confirm" required minlength="8" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+          <option value="">--Choose a course--</option>
+          <option value="Music">Art and Crafts</option>
+          <option value="Art and Crafts">Music</option>
+          <option value="Play">Math</option>
+        </select>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Let us know your goals..."></textarea>
+
+        <label>
+          <input type="checkbox" name="terms" required />
+          I agree to the terms and conditions
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Register" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Web Page. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
